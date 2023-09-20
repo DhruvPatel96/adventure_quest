@@ -1,0 +1,352 @@
+{% extends 'pages/base_background.html' %}
+{% load static %}
+
+{% block title %} WinPark {% endblock title %}
+
+{% block body %} class="index-page bg-gray-200" {% endblock body %}
+
+{% block content %}
+
+</div></div></div>
+<!-- -------- START HEADER 1 w/ text and image on right ------- -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none">
+    <div class="container">
+      <a class="navbar-brand text-white" href="javascript:;">WinPark Adventures</a>
+
+      <div class="collapse navbar-collapse" id="navbar-header-2">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/about">
+              Ride Information
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/contact-us">
+              Contact Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/location">
+              Location
+            </a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link text-white" href="/deals">
+              Deals
+            </a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav" >
+            <li>
+              <h6 class="nav-link text-white my-3">Welcome, User</h6>
+           </li>
+          <li>
+
+              <a href="/logout"><button type="button" class="form-control mr-sm-1 btn btn-primary my-3">Logout</button></a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-header min-vh-100" style="background-image: url(&#39;https://images.unsplash.com/photo-1582198790133-3692e01f649c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cm9sbGVyJTIwY29hc3RlcnxlbnwwfHwwfHw%3D&w=1000&q=80;);" loading="lazy">
+    <span class="mask bg-gradient-dark opacity-5"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+          <h1 class="text-white mb-4">Adventure Quest</h1>
+          <p class="text-white opacity-8 lead  ">
+              Looking for the ultimate day of fun and adventure? Look no further than our amusement park! With thrilling rides, exciting attractions, and delicious food options, there's something for everyone at our park.But don't wait - book your tickets today to secure your spot at our amusement park.
+               Book your tickets now and get ready to experience the time of your life at our amusement park.</p>
+           <p class="text-white opacity-9 lead ">
+                We can't wait to see you there!
+           </p>
+            <div class="buttons">
+            <button type="button" class="btn btn-white mt-4">
+                <a href="#booknow"> Book Now
+                    </a>
+            </button>
+{#            <button type="button" class="btn text-white shadow-none mt-4">Learn More</button>#}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- -------- END HEADER 1 w/ text and image on right ------- -->
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+
+<section class="pt-3 pb-4" id="count-stats">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto py-3">
+        <div class="row">
+          <div class="col-md-4 position-relative">
+            <div class="p-3 text-center">
+              <h1 class="text-gradient text-primary"><span id="state1" countTo="30">0</span>+</h1>
+              <h5 class="mt-3">Exciting Rides</h5>
+              <p class="text-sm font-weight-normal">Prepare yourself for an unforgettable experience at our thrilling amusement park!</p>
+            </div>
+            <hr class="vertical dark">
+          </div>
+          <div class="col-md-4 position-relative">
+            <div class="p-3 text-center">
+              <h1 class="text-gradient text-primary"> <span id="state2" countTo="5">0</span></h1>
+              <h5 class="mt-3">Appealing Surroundings</h5>
+              <p class="text-sm font-weight-normal">Enjoy the beauty of nature by taking a stroll through our lovely gardens!</p>
+            </div>
+            <hr class="vertical dark">
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 text-center">
+              <h1 class="text-gradient text-primary" id="state3" countTo="4">0</h1>
+              <h5 class="mt-3">Water Parks</h5>
+              <p class="text-sm font-weight-normal">Dive into fun with our thrilling waterpark attractions and slides!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="my-5 py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+        <div class="rotating-card-container">
+          <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+            <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
+              <div class="card-body py-7 text-center">
+                <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 class="text-white">Gold Pass</h3>
+                <p class="text-white opacity-8">By purchasing our Gold Access Pass, you'll receive unlimited access to all of our wonderful rides and attractions, enabling you to have endless fun all day long without having to stand in line. Your entire enjoyment of the park will be increased by the great discounts you'll get on food and merchandise!</p>
+              </div>
+            </div>
+            <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+              <div class="card-body pt-7 text-center">
+                <h3 class="text-white">Would like to Learn More!</h3>
+                <p class="text-white opacity-8"> Prepare to shout with ecstasy! Reserve your tickets to our theme park right away to be ready for an exciting and humorous day.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+        <div class="rotating-card-container">
+          <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+            <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
+              <div class="card-body py-7 text-center">
+                <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 class="text-white">Blue Pass</h3>
+                <p class="text-white opacity-8">You will get access to all of our rides and attractions with our Blue Access Pass, exactly as our Gold Pass. The primary distinction is the requirement that you stand in line with other guests. Although our lines move rapidly, you can be sure that you'll still have plenty of time to enjoy all the thrilling attractions the park has to offer.</p>
+              </div>
+            </div>
+            <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+              <div class="card-body pt-7 text-center">
+                <h3 class="text-white">Would like to Learn More!</h3>
+                <p class="text-white opacity-8"> Prepare to shout with ecstasy! Reserve your tickets to our theme park right away to be ready for an exciting and humorous day.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+        <div class="rotating-card-container">
+          <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+            <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
+              <div class="card-body py-7 text-center">
+                <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 class="text-white">Silver Pass</h3>
+                <p class="text-white opacity-8">Silver Access Pass is a great option for travellers on a tight budget! You will still have access to all of our rides and attractions despite some limitations, such as increased wait times and restricted availability for select rides, assuring a fun and exciting day at the park!</p>
+              </div>
+            </div>
+            <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+              <div class="card-body pt-7 text-center">
+                <h3 class="text-white">Would like to Learn More!</h3>
+                <p class="text-white opacity-8"> Prepare to shout with ecstasy! Reserve your tickets to our theme park right away to be ready for an exciting and humorous day.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+    <h2 class="text-center">Get Your Pass Now!</h2>
+    <div class="container-fluid py-5 px-5 ">
+        <form action="" method="POST">
+            {% csrf_token %}
+             <div class="row justify-space-between py-2">
+                <div class="col-sm input-group input-group-static mb-4">
+                    <label for="">Tier</label>
+                    <select class="form-control" name="tier_id" id="tier_id">
+                        <!--Tier id and Tier-->
+
+                        {% for each_tier, tier_id in all_tier %}
+                            <option value={{tier_id}}>{{each_tier}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm input-group input-group-static mb-4">
+                    <label for="">Select Date</label>
+                    <input class="form-control mr-sm-2" type="date" min="2023-03-27" max="2025-04-30" placeholder="Check in" name="cin" aria-label="Search" required="True">
+                </div>
+                <div class="col-sm input-group input-group-static mb-4">
+                    <label for="">People</label>
+                    <input class="form-control mr-sm-2" type="number" placeholder="Person" name="capacity" aria-label="Search" required="True">
+                </div>
+                <div class="col-sm">
+                    <input type="submit" value="Check Availability" class="form-control mr-sm-2 btn btn-primary my-4" style="position: relative;top: 7px;">
+                </div>
+             </div>
+        </form>
+    </div>
+</section>
+
+<!-- Results will appear here -->
+{% if packages %}
+<div class="card">
+  <div class="table-responsive">
+    <table class="table align-items-center mb-0">
+      <thead>
+        <tr>
+          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tier</th>
+          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Package</th>
+          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Price (tax incl.)</th>
+          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Availability</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for package in packages %}
+            <tr>
+              <td>
+                <div class="d-flex px-2">
+                  <div>
+                    <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2">
+                  </div>
+                  <div class="my-auto">
+                    <h6 class="mb-0 text-xs">{{ package.tier.name }}</h6>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="text-xs font-weight-normal mb-0">{{ package.get_package_type_display }}</p>
+              </td>
+              <td>
+                <span class="badge badge-dot me-4">
+                  <i class="bg-info"></i>
+                  <span class="text-dark text-xs">${{ package.price }}</span>
+                </span>
+              </td>
+              <td class="align-middle text-center">
+                <div class="d-flex align-items-center">
+                  <span class="me-2 text-xs">{{ package.get_status_display }}</span>
+                </div>
+              </td>
+
+              <td class="align-middle">
+                  {% if package.status == "1" %}
+                      <a href="/bookpackage?package_id={{ package.id }}">
+                          <button class="btn btn-success mb-0">
+                            Book Now
+                          </button>
+                      </a>
+                  {% else %}
+                      <button class="btn btn-danger mb-0 disabled" disabled>
+                        Unavailable
+                      </button>
+                  {% endif %}
+              </td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+
+<!-- -------   START PRE-FOOTER 2 -------- -->
+
+<div class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 ms-auto">
+          {#    <a class="text-center shadow-blur font-weight-bold text-black" >Get Your Pass Now!</a>#}
+        <h4 class="mb-">Thank you for your support!</h4>
+        <p class="lead mb-1">Our adventures are top-notch.</p>
+      </div>
+      <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------   END PRE-FOOTER 2 --------- -->
+</div>
+
+
+
+{% endblock content %}
+
+{% block javascripts %}
+
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="{% static 'js/plugins/countup.min.js' %}"></script>
+<script src="{% static 'js/plugins/choices.min.js' %}"></script>
+<script src="{% static 'js/plugins/prism.min.js' %}"></script>
+<script src="{% static 'js/plugins/highlight.min.js' %}"></script>
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="{% static 'js/plugins/rellax.min.js' %}"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="{% static 'js/plugins/tilt.min.js' %}"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="{% static 'js/plugins/choices.min.js' %}"></script>
+
+
+<script type="text/javascript">
+
+  if (document.getElementById('state1')) {
+    const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+    if (!countUp.error) {
+      countUp.start();
+    } else {
+      console.error(countUp.error);
+    }
+  }
+  if (document.getElementById('state2')) {
+    const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+    if (!countUp1.error) {
+      countUp1.start();
+    } else {
+      console.error(countUp1.error);
+    }
+  }
+  if (document.getElementById('state3')) {
+    const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+    if (!countUp2.error) {
+      countUp2.start();
+    } else {
+      console.error(countUp2.error);
+    };
+  }
+</script>
+
+{% endblock javascripts %}
